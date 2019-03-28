@@ -169,9 +169,11 @@
           </div>
 
           <div v-if="isReferenceType" class="form-group row">
-            <label class="col-3 col-form-label text-muted">{{ 'attribute-edit-form-cascade-delete-label' | i18n }}</label>
-            <div class="col checkbox-column">
-              <input v-model="cascadeDelete" class="form-control" type="checkbox">
+            <div class="col-3 text-muted">{{ 'attribute-edit-form-cascade-delete-label' | i18n }}</div>
+            <div class="col-9">
+              <div class="form-check">
+                <input v-model="cascadeDelete" class="form-check-input position-static" type="checkbox">
+              </div>
             </div>
           </div>
 
